@@ -27,6 +27,7 @@ treat it as having the value `"uniform"`.
 ## `start` Message Additions
 
 Attribute    | Description
+---------    | -----------
 `randomizer` | An object specifying the state of the randomizer at the end of the queue.
 
 The `randomizer` object has a `type` field indicating which randomizer it is.
