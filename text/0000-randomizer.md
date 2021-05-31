@@ -16,16 +16,18 @@ Attribute    | Description
 `randomizer` | A string indicating which randomizer the game is using.
 
 Possible `randomizer` values:
-- `"uniform"`: Any piece may show up at any time with no or little bias.
+- `"uniform"`: Pieces are chosen randomly with little to no bias.
 - `"seven_bag"`: Pieces are drawn uniformly at random from a bag without
   replacement. When the bag is empty, it is refilled with one of each piece.
 - `"general_bag"`: Pieces are drawn uniformly at random from a bag without
   replacement. When the bag is empty, it is reset to its filled state, which is
   specified in the `randomizer` object on the `start` message.
+- `"unknown"`: Fallback if no known randomizer is able to accurately represent
+  the randomizer that the game uses.
 
 If the value of the `randomizer` attribute is not present or not recognized (as
 may be the case if more randomizers are added in the future), the bot should
-treat it as having the value `"uniform"`.
+treat it as having the value `"unknown"`.
 
 ## `start` Message Additions
 
