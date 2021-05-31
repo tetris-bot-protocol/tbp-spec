@@ -52,5 +52,13 @@ Attribute | Description
 
 Attribute     | Description
 ---------     | -----------
-`current_bag` | A list specifying the contents of the bag at the end of the queue. E.g. `["I", "I", "O"]`
-`filled_bag`  | A list specifying the filled state of the bag. E.g. `["I", "I", "O", "L", "J", "T"]`
+`current_bag` | An object specifying the number of each piece in the bag at the end of the queue.
+`filled_bag`  | An object specifying the number of each piece in the filled state of the bag. It is invalid for this to be zero for all pieces.
+
+Example:
+```
+{
+  "current_bag": {"I": 2, "O": 1, "L": 0, "J": 0, "S": 0, "Z": 0, "T": 0},
+  "filled_bag": {"I": 2, "O": 1, "L": 1, "J": 3, "S": 0, "Z": 0, "T": 1}
+}
+```
