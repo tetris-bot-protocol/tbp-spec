@@ -41,4 +41,5 @@ This object has no additional attributes.
 ### `7-bag` Object
 
 Attribute | Description
+--------- | -----------
 `bag`     | A list specifying the contents of the bag. E.g. `["S", "L", "T"]`
