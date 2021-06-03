@@ -46,15 +46,15 @@ This object has no additional attributes.
 
 ### `seven_bag` Object
 
-Attribute | Description
---------- | -----------
-`bag`     | A list specifying the contents of the bag at the end of the queue. E.g. `["S", "L", "T"]`
+Attribute   | Description
+---------   | -----------
+`bag_state` | A non-empty list specifying the contents of the bag at the end of the queue. E.g. `["S", "L", "T"]`
 
 ### `general_bag` Object
 
 Attribute     | Description
 ---------     | -----------
-`current_bag` | An object specifying the number of each piece in the bag at the end of the queue.
+`current_bag` | An object specifying the number of each piece in the bag at the end of the queue. It is invalid for this to be zero for all pieces.
 `filled_bag`  | An object specifying the number of each piece in the filled state of the bag. It is invalid for this to be zero for all pieces.
 
 Example:
