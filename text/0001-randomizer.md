@@ -2,7 +2,7 @@
 
 Currently, the Tetris Bot Protocol offers no way for the frontend to inform the
 bot about fundamental patterns in the piece queue, such as the bag system that
-modern Tetris games employ. This feature, called `randomizer`, adds a new
+modern Tetris games employ. This feature adds a new
 attribute to the `rules` message to indicate what system the game is using, and
 a new attribute to the `start` message to indicate the state of the randomizer
 at the end of the provided piece queue.
