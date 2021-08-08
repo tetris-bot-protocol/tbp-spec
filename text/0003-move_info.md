@@ -12,16 +12,17 @@ Attribute   | Type     | Description
 ---------   | -------- | ----
 `move_info` | `object` | An object which contains the move info.
 
-A move_info is an object which may contain the following attributes:
+A move_info is an object which **may** contain the following attributes:
 
-Attribute | Type                    | Description
---------- | ----------------------- | ----
-`nodes`   | `number` or `undefined` | Total number of nodes of current game tree.
-`nps`     | `number` or `undefined` | Number of nodes created per second.
-`depth`   | `number` or `undefined` | The depth of current game tree.
-`extra`   | `string` or `undefined` | Additional informational string about the provided move.
+Attribute | Type     | Description
+--------- | -------- | ----
+`nodes`   | `number` | Total number of nodes of current game tree.
+`nps`     | `number` | Number of nodes created per second.
+`depth`   | `number` | The depth of current game tree.
+`extra`   | `string` | Additional informational string about the provided move.
 
 Since bots may have different implementations of a game tree, it is not enforced for bots to provide all the values.
+Also, it is up to bot developers how to count these values.
 
 # Example
 
